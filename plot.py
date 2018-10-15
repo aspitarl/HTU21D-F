@@ -20,6 +20,10 @@ lns = ln1 + ln2
 labs = [l.get_label() for l in lns]
 ax.legend(lns,labs)
 
+ax.set_xlabel('Time')
+ax.set_ylabel('Temperature (C)')
+ax2.set_ylabel('Relative Humidity (%)')
+
 fig.autofmt_xdate()
 plt.show()
 
