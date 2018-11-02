@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import datetime
 
-csv = pd.read_csv("log.csv", index_col = 0)
+csv = pd.read_csv("Data/log.csv", index_col = 0)
 
 fig, ax = plt.subplots(1,1)
 

@@ -9,7 +9,7 @@ sensor = HTU21D(i2c)
 
 while True:
     print("\nTemperature: " , sensor.temperature, "    Humidity: ", sensor.relative_humidity)
-    with open("log.csv",'a+') as write_file:
+    with open("Data/log.csv",'a+') as write_file:
         write_file.write(str(time.time()) + ", " + str(sensor.temperature) + ", " + str(sensor.relative_humidity) + "\n")
         
     time.sleep(60)
